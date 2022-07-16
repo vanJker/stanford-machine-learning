@@ -18,8 +18,17 @@ grad = zeros(size(theta));
 %               derivatives of the cost w.r.t. each parameter in theta
 
 
+% the first half part is the same as non-regularization
+[J, grad] = costFunction(theta, X, y);
 
+% don't consider theta(1)
+theta(1) = 0;
 
+% add second part to cost function
+J = J + lambda/(2*m) * theta'*theta;
+
+% add second part to gradient
+grad = grad + lambda/m * theta;
 
 
 % =============================================================
