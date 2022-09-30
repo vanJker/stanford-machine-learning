@@ -6,6 +6,11 @@ Self learning of Standford University's Machine Learning course in coursera.
 Instructor: Andrew Ng    
 Coursera: [Machine Learning][ml]
 
+```
+Branch
+|__master   slides, notes and solutions
+|__skeleton skeleton/starter code of assignments
+```
 
 ## Schedule
 
